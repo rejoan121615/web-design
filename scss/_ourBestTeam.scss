@@ -1,0 +1,23 @@
+#ourBestTeam {
+    background-color: $bg_black;
+    .container {
+        .texts {
+            
+        }
+
+
+        // team img gallery 
+        .team-gallery {
+            .card {
+                h2 {
+                    @include fonts (LatoHeavy, 1.5rem, $yellow, center, uppercase);
+                    margin-top: 25px;
+                }
+                .para {
+                    color: $black;
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+}

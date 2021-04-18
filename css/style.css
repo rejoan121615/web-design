@@ -92,6 +92,10 @@
   background-color: #fba419;
 }
 
+.yellow {
+  color: #fba419;
+}
+
 .black {
   color: #383738 !important;
 }
@@ -225,6 +229,31 @@
   #wearecreative .container .btn_wrapper {
     margin-top: 80px !important;
   }
+}
+
+#ourBestTeam {
+  background-color: #2f2f2f;
+}
+#ourBestTeam .container .team-gallery .card h2 {
+  font-family: LatoHeavy;
+  font-size: 1.5rem;
+  color: #fba419;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+@media only screen and (min-width: 992px) {
+  #ourBestTeam .container .team-gallery .card h2 {
+    text-align: left;
+  }
+}
+#ourBestTeam .container .team-gallery .card .para, #ourBestTeam .container .team-gallery .card .para_light {
+  color: #383738;
+  text-transform: capitalize;
+}
+
+a, img {
+  display: inline-block;
 }
 
 .container {
