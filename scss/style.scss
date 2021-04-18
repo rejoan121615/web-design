@@ -1,0 +1,13 @@
+@import 'varMixing';
+@import 'fonts';
+@import 'navbar';
+@import 'main';
+
+
+.container {
+    @include padY(100px, 100px);
+    // responsive 
+    @include resp ($lg) {
+        @include padY (130px, 130px);
+    }
+}

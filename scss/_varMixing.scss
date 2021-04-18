@@ -1,0 +1,78 @@
+@mixin fonts ($f: Regular, $size: 1rem, $color: white, $align: center, $trans: initial) {
+    font-family: $f;
+    font-size: $size;
+    color: $color;
+    text-align: $align;
+    text-transform: $trans;
+    @include resp ($lg) {
+        text-align: left;
+    } 
+}
+// color variable 
+$yellow: #fba419;
+$black: #383738;
+$bg_black: #2f2f2f;
+
+
+// media variable 
+
+  $xs: 0px;
+  $sm: 576px;
+  $md: 768px;
+  $lg: 992px;
+  $xl: 1200px;
+  $xxl: 1400px;
+
+
+
+@mixin  resp ($break) {
+    @media only screen and (min-width: $break) {
+        @content;
+    }
+}
+
+.para {
+    @include fonts( LatoRegular, 1.2rem, white, left, initial);
+    // responsive 
+    @include resp ($sm) {
+        font-size: 1.4rem;
+        letter-spacing: 1px;
+    }
+    @include resp ($lg) {
+        font-size: 1.5rem;
+    }
+}
+
+.para_light {
+    @extend .para;
+    font-family: LatoLight;
+}
+
+
+.btn {
+    @include fonts( LatoBold, 1.1rem, white, center, uppercase);
+    padding: 10px 35px;
+    border-radius: 40px;
+    display: inline-block;
+    background-color: $yellow;
+}
+.btn_wrapper {
+    text-align: center;
+}
+
+
+// spacing 
+@mixin padY ($t, $b) {
+    padding-top: $t;
+    padding-bottom: $b;
+}
+
+@mixin padX ($l, $r) {
+    padding-left: $l;
+    padding-right: $r;
+}
+
+
+.section_heading {
+    @include fonts( LatoHeavy, 5rem, $yellow, left, uppercase );
+}

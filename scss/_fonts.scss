@@ -1,0 +1,21 @@
+$fontList: (
+    LatoBlack: '../fonts/Lato-Black.ttf', 
+    LatoBlackItalic: '../fonts/Lato-BlackItalic.ttf', 
+    LatoBold: '../fonts/Lato-Bold.ttf', 
+    LatoBoldItalic: '../fonts/Lato-BoldItalic.ttf', 
+    LatoItalic: '../fonts/Lato-Italic.ttf', 
+    LatoLight: '../fonts/Lato-Light.ttf', 
+    LatoLightItalic: '../fonts/Lato-LightItalic.ttf', 
+    LatoRegular: '../fonts/Lato-Regular.ttf', 
+    LatoThin: '../fonts/Lato-Thin.ttf',
+    LatoThinItalic: '../fonts/Lato-ThinItalic.ttf',
+    LatoHeavy: '../fonts/Lato-Heavy.ttf' 
+    );
+
+
+@each $name, $src in $fontList {
+    @font-face {
+        font-family: $name;
+        src: url($src);
+    }
+}
