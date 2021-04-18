@@ -1,0 +1,25 @@
+#wearecreative {
+    background: url("../img/corner_bottom.png") no-repeat center top,
+                url('../img/wearecreative_sm.jpg') no-repeat right bottom;
+    background-size: 270px, 100%;
+    // responsive
+
+    @include resp($sm) {
+        background-size: 300px, 650px;
+    }
+    @include resp ($lg) {
+        background: url('../img/corner_bottom.png') no-repeat center top,
+                    url('../img/wearecreative.jpg') no-repeat top right;
+        // background-size: 320px, 650px;
+    }
+    .container {
+        .texts {
+            margin-top: 80px;
+        }
+        .btn_wrapper {
+            @include resp($xl) {
+                margin-top: 80px !important;
+            }
+        }
+    }
+}

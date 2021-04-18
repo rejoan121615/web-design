@@ -55,6 +55,11 @@ $bg_black: #2f2f2f;
     border-radius: 40px;
     display: inline-block;
     background-color: $yellow;
+    // hover animation 
+    &:hover {
+        background-color: darken($color: $yellow, $amount: 10);
+        color: white;
+    }
 }
 .btn_wrapper {
     text-align: center;
@@ -74,5 +79,48 @@ $bg_black: #2f2f2f;
 
 
 .section_heading {
-    @include fonts( LatoHeavy, 5rem, $yellow, left, uppercase );
+    @include fonts( LatoHeavy, 3rem, $black, center, uppercase );
+    // responsive 
+    @include resp ($sm) {
+        font-size: 3.5rem;
+    }
+    @include resp ($md) {
+        font-size: 4rem;
+    }
+
+    @include resp ($lg) {
+        font-size: 5rem;
+    }
+    @include resp ($xl) {
+        font-size: 5.5rem;
+    }
+
+}
+
+.section_heading_yellow {
+    @extend .section_heading;
+    color: $yellow;
+}
+
+.bg_yellow {
+    background-color: $yellow;
+}
+.black {
+    color: $black!important;
+}
+
+.border {
+    background-color: $yellow;
+    height: 10px;
+    width: 100%;
+    // max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    @include resp ($md) {
+        width: 450px;
+    }
+    @include resp ($lg) {
+        width: 300px;
+        margin-left: 0;
+    }
 }
