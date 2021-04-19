@@ -252,6 +252,27 @@
   text-transform: capitalize;
 }
 
+#ourWork .container .row .texts .para, #ourWork .container .row .texts .para_light {
+  color: #707070;
+}
+@media only screen and (min-width: 992px) {
+  #ourWork .container .row .work_gallery {
+    transform: translateX(110px);
+  }
+}
+#ourWork .container .row .work_gallery .row .img-wrapper {
+  margin-bottom: 25px;
+}
+@media only screen and (min-width: 576px) {
+  #ourWork .container .row .work_gallery .row .img-wrapper {
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (min-width: 576px) {
+  #ourWork .container .row .work_gallery .row .img-wrapper .custom {
+    height: 104%;
+  }
+}
 a, img {
   display: inline-block;
 }

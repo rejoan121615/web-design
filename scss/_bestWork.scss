@@ -1,0 +1,37 @@
+#ourWork {
+    .container {
+        .row {
+            // texts
+            .texts {
+                .para {
+                    color: $text_black;
+                }
+            }
+            // gallery
+            .work_gallery {
+                // responsive 
+                @include resp ($lg) {
+                    transform: translateX(110px);
+                }
+                .row {
+                    .img-wrapper {
+                        margin-bottom: 25px;
+                        // responsive
+                        @include resp($sm) {
+                            margin-bottom: 1rem;
+                        }
+                        .custom {
+                            @include resp ($sm) {
+                                height: 104%;
+                            }
+                        }
+                        .custom2 {
+                            @include resp ($lg) {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
