@@ -13,6 +13,9 @@ $yellow: #fba419;
 $black: #383738;
 $bg_black: #2f2f2f;
 $text_black: #707070;
+$white: white;
+
+
 
 
 // media variable 
@@ -90,7 +93,7 @@ $text_black: #707070;
     }
 
     @include resp ($lg) {
-        font-size: 5rem;
+        font-size: 4.5rem;
     }
     @include resp ($xl) {
         font-size: 5.5rem;
@@ -112,6 +115,9 @@ $text_black: #707070;
 .black {
     color: $black!important;
 }
+.white {
+    color: $white!important;
+}
 
 .border {
     background-color: $yellow;
@@ -127,4 +133,10 @@ $text_black: #707070;
         width: 300px;
         margin-left: 0;
     }
+}
+
+.small_heading {
+    @extend .section_heading;
+    color: white;
+    font-size: 1.6rem;
 }

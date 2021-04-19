@@ -1,0 +1,42 @@
+#whyChooseUs {
+    background-color: $bg_black;
+
+    // responsive 
+    @include resp ($xl) {
+        background: $bg_black url('../img/why_choose_us.jpg') no-repeat left center;
+        background-size: 50%;
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+
+    @include resp ($xxl) {
+        background-position: left center;
+        background-size: 47%;
+    }
+    .container {
+        // responsive 
+        @include resp ($xl) {
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+        aside {
+            @include resp ($md) {
+                margin-top: 60px;
+            }
+
+            @include resp ($xl) {
+                margin-top: 0px;
+            }
+            
+            .item-wrap {
+                max-width: 400px;
+
+                // responsive 
+                @include resp ($md) {
+                    max-width: initial;
+                }
+
+            }
+        }
+    }
+}

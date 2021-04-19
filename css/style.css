@@ -51,7 +51,7 @@
   text-align: center;
 }
 
-.section_heading, .section_heading_yellow {
+.section_heading, .small_heading, .section_heading_yellow {
   font-family: LatoHeavy;
   font-size: 3rem;
   color: #383738;
@@ -59,27 +59,27 @@
   text-transform: uppercase;
 }
 @media only screen and (min-width: 992px) {
-  .section_heading, .section_heading_yellow {
+  .section_heading, .small_heading, .section_heading_yellow {
     text-align: left;
   }
 }
 @media only screen and (min-width: 576px) {
-  .section_heading, .section_heading_yellow {
+  .section_heading, .small_heading, .section_heading_yellow {
     font-size: 3.5rem;
   }
 }
 @media only screen and (min-width: 768px) {
-  .section_heading, .section_heading_yellow {
+  .section_heading, .small_heading, .section_heading_yellow {
     font-size: 4rem;
   }
 }
 @media only screen and (min-width: 992px) {
-  .section_heading, .section_heading_yellow {
-    font-size: 5rem;
+  .section_heading, .small_heading, .section_heading_yellow {
+    font-size: 4.5rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  .section_heading, .section_heading_yellow {
+  .section_heading, .small_heading, .section_heading_yellow {
     font-size: 5.5rem;
   }
 }
@@ -100,6 +100,10 @@
   color: #383738 !important;
 }
 
+.white {
+  color: white !important;
+}
+
 .border {
   background-color: #fba419;
   height: 10px;
@@ -117,6 +121,11 @@
     width: 300px;
     margin-left: 0;
   }
+}
+
+.small_heading {
+  color: white;
+  font-size: 1.6rem;
 }
 
 @font-face {
@@ -167,37 +176,37 @@
   background: url("../img/main_bg.jpg") no-repeat center center;
   background-size: cover;
 }
-#main .container .section_heading, #main .container .section_heading_yellow {
+#main .container .section_heading, #main .container .section_heading_yellow, #main .container .small_heading {
   font-family: LatoBlack;
   color: white;
   font-size: 3rem;
   line-height: 50px;
 }
 @media only screen and (min-width: 576px) {
-  #main .container .section_heading, #main .container .section_heading_yellow {
+  #main .container .section_heading, #main .container .section_heading_yellow, #main .container .small_heading {
     font-size: 3.3rem;
     line-height: 56px;
   }
 }
 @media only screen and (min-width: 768px) {
-  #main .container .section_heading, #main .container .section_heading_yellow {
+  #main .container .section_heading, #main .container .section_heading_yellow, #main .container .small_heading {
     font-size: 3.6rem;
     line-height: initial;
   }
 }
 @media only screen and (min-width: 992px) {
-  #main .container .section_heading, #main .container .section_heading_yellow {
+  #main .container .section_heading, #main .container .section_heading_yellow, #main .container .small_heading {
     font-size: 4.2rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  #main .container .section_heading, #main .container .section_heading_yellow {
+  #main .container .section_heading, #main .container .section_heading_yellow, #main .container .small_heading {
     font-size: 5.5rem;
     line-height: initial;
   }
 }
 @media only screen and (min-width: 1400px) {
-  #main .container .section_heading, #main .container .section_heading_yellow {
+  #main .container .section_heading, #main .container .section_heading_yellow, #main .container .small_heading {
     font-size: 7rem;
   }
 }
@@ -273,6 +282,48 @@
     height: 104%;
   }
 }
+#whyChooseUs {
+  background-color: #2f2f2f;
+}
+@media only screen and (min-width: 1200px) {
+  #whyChooseUs {
+    background: #2f2f2f url("../img/why_choose_us.jpg") no-repeat left center;
+    background-size: 50%;
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #whyChooseUs {
+    background-position: left center;
+    background-size: 47%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #whyChooseUs .container {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #whyChooseUs .container aside {
+    margin-top: 60px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #whyChooseUs .container aside {
+    margin-top: 0px;
+  }
+}
+#whyChooseUs .container aside .item-wrap {
+  max-width: 400px;
+}
+@media only screen and (min-width: 768px) {
+  #whyChooseUs .container aside .item-wrap {
+    max-width: initial;
+  }
+}
+
 a, img {
   display: inline-block;
 }
