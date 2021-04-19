@@ -12,13 +12,12 @@
 }
 @media only screen and (min-width: 576px) {
   .para, .para_light {
-    font-size: 1.4rem;
     letter-spacing: 1px;
   }
 }
 @media only screen and (min-width: 992px) {
   .para, .para_light {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
   }
 }
 
@@ -93,7 +92,7 @@
 }
 
 .yellow {
-  color: #fba419;
+  color: #fba419 !important;
 }
 
 .black {
@@ -322,6 +321,79 @@
   #whyChooseUs .container aside .item-wrap {
     max-width: initial;
   }
+}
+
+#ourBestService {
+  background: url("../img/ourBestService.jpg") no-repeat center bottom;
+  background-size: 100% 1550px;
+}
+@media only screen and (min-width: 576px) {
+  #ourBestService {
+    background-size: 100% 1780px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #ourBestService {
+    background-size: 100% 1070px;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #ourBestService {
+    background-size: 100% 1050px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #ourBestService {
+    background-size: 50% 102%;
+    background-position: right center;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #ourBestService .container {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #ourBestService .container .texts {
+    padding-right: 55px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #ourBestService .container .texts {
+    padding-right: 80px;
+  }
+}
+#ourBestService .container .service_features {
+  margin-top: 200px !important;
+  padding: 60px 30px;
+  background: #2f2f2f;
+  border-radius: 12px;
+}
+@media only screen and (min-width: 768px) {
+  #ourBestService .container .service_features {
+    margin-top: 150px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #ourBestService .container .service_features {
+    margin-top: 0px !important;
+  }
+}
+#ourBestService .container .service_features .item {
+  text-align: center;
+}
+#ourBestService .container .service_features .item img {
+  max-width: 150px;
+}
+@media only screen and (min-width: 1200px) {
+  #ourBestService .container .service_features .item img {
+    max-width: 110px;
+  }
+}
+#ourBestService .container .service_features .item .para_light {
+  max-width: 400px;
+  text-align: justify;
 }
 
 a, img {

@@ -1,0 +1,65 @@
+#ourBestService {
+    background: url("../img/ourBestService.jpg") no-repeat center bottom;
+    background-size: 100% 1550px;
+
+    // responsive
+    @include resp ($sm) {
+        background-size: 100% 1780px;
+    }
+    @include resp($md) {
+        background-size: 100% 1070px;
+    }
+    @include resp($lg) {
+        background-size: 100% 1050px;
+    }
+    @include resp($xl) {
+        background-size: 50% 102%;
+        background-position: right center;
+    }
+
+    .container {
+        @include resp($xl) {
+            @include padY(100px, 100px);
+        }
+        .texts {
+            @include resp($xl) {
+                padding-right: 55px;
+            }
+            @include resp ($xxl) {
+                padding-right: 80px;
+            }
+        }
+
+        // social list
+        .service_features {
+            margin-top: 200px !important;
+            padding: 60px 30px;
+            background: $bg_black;
+            border-radius: 12px;
+            // responsive
+            @include resp($md) {
+                margin-top: 150px !important;
+            }
+            @include resp($xl) {
+                margin-top: 0px !important;
+            }
+            .item {
+                text-align: center;
+                img {
+                    max-width: 150px;
+                    // responsive
+                    @include resp($xl) {
+                        max-width: 110px;
+                    }
+                }
+
+                h3 {
+                }
+                .para_light {
+                    max-width: 400px;
+                    text-align: justify;
+                }
+            }
+        }
+    }
+}
