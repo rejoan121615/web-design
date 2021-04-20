@@ -1,0 +1,31 @@
+#contact {
+    background-color: $bg_black;
+
+    .container {
+        padding-bottom: 0px;
+        .item {
+            .img_wrap {
+                img {
+                    max-width: 85px;
+                    @include resp($sm) {
+                        max-width: 100px;
+                    }
+                    @include resp($md) {
+                        // max-width: initial;
+                    }
+                }
+            }
+        }
+    }
+    // footer
+    .footer_container {
+        background: url("../img/bottom_bg.png") no-repeat center bottom;
+        background-size: 700px;
+        @include padY(270px, 80px);
+        .small_heading {
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: #ca49ff !important;
+        }
+    }
+}
