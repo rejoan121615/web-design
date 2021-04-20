@@ -1,0 +1,71 @@
+.navbar {
+    .container {
+        // common style 
+        // responsive 
+        @include resp ($xxl) {
+            width: 100%!important;
+            max-width: 1600px!important;
+        }
+
+        // navbar style 
+        .navbar-brand {
+            .small_heading {
+                font-size: 2rem;
+                // responsive 
+                @include resp ($xl) {
+                    border-bottom: 3px solid white;
+                    font-size: 3rem;
+                }
+            }
+            .social {
+                a {
+                    text-align: center;
+                    text-decoration: none;
+                    border: 2px solid white;
+                    padding: 3px 5px;
+                    // responsive 
+                    @include resp ($xl) {
+                        padding: 5px 10px;
+                    }
+                    i {
+                        &::before {
+                            font-size: 24px;
+                            color: white;
+                            text-align: center;
+                            margin-left: 0px;
+                            // responsive 
+                            @include resp ($xl) {
+                                font-size: 30px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        // navbar style 
+        .navbar_wrapper {
+            .navbar-toggler {
+                &:focus {
+                    box-shadow: none;
+                }
+            }
+            #mynavbar {
+                // responsive 
+                @include resp ($sm) {
+                    margin-top: 50px!important;
+                }
+                @at-root .nav-link {
+                    font-family: LatoBold;
+                    text-transform: uppercase;
+                    color: white!important;
+                    // responsive 
+                    @include resp ($xxl) {
+                        font-size: 1.1rem;
+                        letter-spacing: 1px;
+                    }
+                }
+            }
+        }
+    }
+}

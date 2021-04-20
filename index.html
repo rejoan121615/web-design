@@ -14,60 +14,67 @@
         <link rel="stylesheet" href="./css/style.css" />
     </head>
     <body>
-        <!-- header section  -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <div class="container-fluid flex-row">
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+            <div class="container align-items-start py-4">
+                <!-- navbar right  -->
+                <div class="navbar-nav navbar-left d-none d-lg-flex w-xl-25 justify-content-between w-xxl-20">
+                    <a href="" class="nav-link">home</a>
+                    <a href="" class="nav-link">about us</a>
+                    <a href="" class="nav-link">blog</a>
+                </div>
                 <!-- navbar brand  -->
-                <a href="" class="navbar-brand">
-                    <img src="" alt="" />
-                    <h3>digital</h3>
-                </a>
-                <!-- toggle button  -->
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#responsiveNav"
-                    aria-controls="responsiveNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="navbar-brand mx-auto w-xs-90 w-sm-60 w-lg-25 d-flex flex-row flex-lg-column flex-wrap justify-content-between">
+                    <h2 class="small_heading text-start mx-lg-auto me-4 pb-xl-3">
+                        digital<span class="yellow">.</span>        
+                    </h2>
+                    <div class="social mx-lg-auto mt-xl-3 w-xl-50 mx-xl-auto d-xl-flex justify-content-xl-between">
+                            <a href="" class="rounded-circle">
+                                <i class="flaticon-facebook-logo"></i>
+                            </a>
+                            <a href="" class="rounded-circle">
+                                <i class="flaticon-picasa-logo"></i>
+                            </a>
+                            <a href="" class="rounded-circle">
+                                <i class="flaticon-twitter-logo"></i>
+                            </a>
+                        </div>
+                </div>
                 <!-- navbar  -->
-                <div class="collapse navbar-collapse" id="responsiveNav">
-                    <ul class="navbar-nav">
-                        <!-- item  -->
-                        <li class="nav-item">
+                <div class="navbar_wrapper mx-auto w-xs-100 w-sm-40 w-md-30 overflow-hidden mt-3 mt-sm-2 d-lg-none">
+                    <button
+                        class="navbar-toggler float-end"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#mynavbar"
+                        aria-controls="mynavbar"
+                        aria-expanded="false"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse mt-5" id="mynavbar">
+                        <div class="navbar-nav ms-4 ms-sm-0">
                             <a href="" class="nav-link">home</a>
-                        </li>
-                        <!-- item  -->
-                        <li class="nav-item">
                             <a href="" class="nav-link">about us</a>
-                        </li>
-                        <!-- item  -->
-                        <li class="nav-item">
                             <a href="" class="nav-link">blog</a>
-                        </li>
-                        <!-- item  -->
-                        <li class="nav-item">
                             <a href="" class="nav-link">services</a>
-                        </li>
-                        <!-- item  -->
-                        <li class="nav-item">
                             <a href="" class="nav-link">pages</a>
-                        </li>
-                        <!-- item  -->
-                        <li class="nav-item">
                             <a href="" class="nav-link">contact us</a>
-                        </li>
-                    </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- right navbar big screen  -->
+                <div class="navbar-nav navbar-right d-none d-lg-flex w-xl-25 justify-content-between w-xxl-25">
+                    <a href="" class="nav-link">services</a>
+                    <a href="" class="nav-link">pages</a>
+                    <a href="" class="nav-link">contact us</a>
                 </div>
             </div>
         </nav>
+
         <!-- main section  -->
         <main id="main">
-            <div class="container">
+            <!-- main section container  -->
+            <div class="container main_container">
                 <h1 class="section_heading text-center">
                     this is the furute of
                 </h1>
@@ -679,7 +686,6 @@
                             ><i class="flaticon-vine-logo"></i
                         ></a>
                     </div>
-
                 </section>
             </div>
         </section>
@@ -690,43 +696,110 @@
                 <address class="row g-0">
                     <!-- item  -->
                     <aside class="item col-12 col-lg-4 row g-0">
-                        <div class="img_wrap col-12 text-center col-sm-5 col-lg-12 col-xl-5 text-xl-center">
-                            <img class="w-xs-40 w-sm-70 w-xl-50" src="./icons/contact/email.png" alt="email icon">
+                        <div
+                            class="img_wrap col-12 text-center col-sm-5 col-lg-12 col-xl-5 text-xl-center"
+                        >
+                            <img
+                                class="w-xs-40 w-sm-70 w-xl-50"
+                                src="./icons/contact/email.png"
+                                alt="email icon"
+                            />
                         </div>
-                        <div class="text_wrap col-12 mt-4 col-sm-7 mt-sm-0 col-lg-12 col-xl-7">
-                            <h3 class="small_heading text-center text-sm-start text-lg-center text-xl-start">email</h3>
-                            <p class="para text-center mb-1 text-sm-start text-lg-center text-xl-start">myemail@email.com</p>
-                            <p class="para text-center mb-1 text-sm-start text-lg-center text-xl-start">youremail@email.com</p>
+                        <div
+                            class="text_wrap col-12 mt-4 col-sm-7 mt-sm-0 col-lg-12 col-xl-7"
+                        >
+                            <h3
+                                class="small_heading text-center text-sm-start text-lg-center text-xl-start"
+                            >
+                                email
+                            </h3>
+                            <p
+                                class="para text-center mb-1 text-sm-start text-lg-center text-xl-start"
+                            >
+                                myemail@email.com
+                            </p>
+                            <p
+                                class="para text-center mb-1 text-sm-start text-lg-center text-xl-start"
+                            >
+                                youremail@email.com
+                            </p>
                         </div>
                     </aside>
                     <!-- item  -->
                     <aside class="item col-12 col-lg-4 row g-0 mt-5 mt-lg-0">
-                        <div class="img_wrap col-12 text-center col-sm-5 col-lg-12 col-xl-5 text-xl-center">
-                            <img class="w-xs-40 w-sm-70 w-xl-50" src="./icons/contact/iphone.png" alt="email icon">
+                        <div
+                            class="img_wrap col-12 text-center col-sm-5 col-lg-12 col-xl-5 text-xl-center"
+                        >
+                            <img
+                                class="w-xs-40 w-sm-70 w-xl-50"
+                                src="./icons/contact/iphone.png"
+                                alt="email icon"
+                            />
                         </div>
-                        <div class="text_wrap col-12 mt-4 col-sm-7 mt-sm-0 col-lg-12 col-xl-7 mt-lg-3 mt-xl-0">
-                            <h3 class="small_heading text-center text-sm-start text-lg-center text-xl-start">phone</h3>
-                            <p class="para text-center mb-1 text-sm-start text-lg-center text-xl-start">+ 012 345 7896</p>
-                            <p class="para text-center mb-1 text-sm-start text-lg-center text-xl-start">+ 012 345 6789</p>
+                        <div
+                            class="text_wrap col-12 mt-4 col-sm-7 mt-sm-0 col-lg-12 col-xl-7 mt-lg-3 mt-xl-0"
+                        >
+                            <h3
+                                class="small_heading text-center text-sm-start text-lg-center text-xl-start"
+                            >
+                                phone
+                            </h3>
+                            <p
+                                class="para text-center mb-1 text-sm-start text-lg-center text-xl-start"
+                            >
+                                + 012 345 7896
+                            </p>
+                            <p
+                                class="para text-center mb-1 text-sm-start text-lg-center text-xl-start"
+                            >
+                                + 012 345 6789
+                            </p>
                         </div>
                     </aside>
                     <!-- item  -->
                     <aside class="item col-12 col-lg-4 row g-0 mt-5 mt-lg-0">
-                        <div class="img_wrap col-12 text-center col-sm-5 col-lg-12 col-xl-5 text-xl-center">
-                            <img class="w-xs-40 w-sm-70 w-xl-50" src="./icons/contact/placeholder.png" alt="email icon">
+                        <div
+                            class="img_wrap col-12 text-center col-sm-5 col-lg-12 col-xl-5 text-xl-center"
+                        >
+                            <img
+                                class="w-xs-40 w-sm-70 w-xl-50"
+                                src="./icons/contact/placeholder.png"
+                                alt="email icon"
+                            />
                         </div>
-                        <div class="text_wrap col-12 mt-4 col-sm-7 mt-sm-0 col-lg-12 col-xl-7 mt-lg-3 mt-xl-0">
-                            <h3 class="small_heading text-center text-sm-start text-lg-center text-xl-start">address</h3>
-                            <p class="para text-center mb-1 text-sm-start text-lg-center text-xl-start">1234, main road, dhaka</p>
-                            <p class="para text-center mb-1 text-sm-start text-lg-center text-xl-start">mirpur, bangladesh</p>
+                        <div
+                            class="text_wrap col-12 mt-4 col-sm-7 mt-sm-0 col-lg-12 col-xl-7 mt-lg-3 mt-xl-0"
+                        >
+                            <h3
+                                class="small_heading text-center text-sm-start text-lg-center text-xl-start"
+                            >
+                                address
+                            </h3>
+                            <p
+                                class="para text-center mb-1 text-sm-start text-lg-center text-xl-start"
+                            >
+                                1234, main road, dhaka
+                            </p>
+                            <p
+                                class="para text-center mb-1 text-sm-start text-lg-center text-xl-start"
+                            >
+                                mirpur, bangladesh
+                            </p>
                         </div>
                     </aside>
-
                 </address>
             </div>
             <!-- footer  -->
             <footer class="footer_container">
-                <p class="para text-center mb-0">Developed by <a href="https://github.com/rejoan121615" target="_blank" class="small_heading yellow">Mohd Rejoan</a></p>
+                <p class="para text-center mb-0">
+                    Developed by
+                    <a
+                        href="https://github.com/rejoan121615"
+                        target="_blank"
+                        class="small_heading yellow"
+                        >Mohd Rejoan</a
+                    >
+                </p>
             </footer>
         </section>
 

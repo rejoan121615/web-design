@@ -172,48 +172,128 @@
   font-family: LatoHeavy;
   src: url("../fonts/Lato-Heavy.ttf");
 }
+@media only screen and (min-width: 1400px) {
+  .navbar .container {
+    width: 100% !important;
+    max-width: 1600px !important;
+  }
+}
+.navbar .container .navbar-brand .small_heading {
+  font-size: 2rem;
+}
+@media only screen and (min-width: 1200px) {
+  .navbar .container .navbar-brand .small_heading {
+    border-bottom: 3px solid white;
+    font-size: 3rem;
+  }
+}
+.navbar .container .navbar-brand .social a {
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 3px 5px;
+}
+@media only screen and (min-width: 1200px) {
+  .navbar .container .navbar-brand .social a {
+    padding: 5px 10px;
+  }
+}
+.navbar .container .navbar-brand .social a i::before {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+  margin-left: 0px;
+}
+@media only screen and (min-width: 1200px) {
+  .navbar .container .navbar-brand .social a i::before {
+    font-size: 30px;
+  }
+}
+.navbar .container .navbar_wrapper .navbar-toggler:focus {
+  box-shadow: none;
+}
+@media only screen and (min-width: 576px) {
+  .navbar .container .navbar_wrapper #mynavbar {
+    margin-top: 50px !important;
+  }
+}
+.nav-link {
+  font-family: LatoBold;
+  text-transform: uppercase;
+  color: white !important;
+}
+@media only screen and (min-width: 1400px) {
+  .nav-link {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+  }
+}
+
 #main {
   background: url("../img/main_bg.jpg") no-repeat center center;
   background-size: cover;
 }
-#main .container .section_heading, #main .container .section_heading_yellow, #main .container .small_heading {
+#main .nav_container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: transparent;
+}
+#main .nav_container a, #main .nav_container h2 {
+  color: white;
+}
+#main .nav_container .social a {
+  width: 55px;
+  height: 55px;
+  border: 3px solid white;
+  text-align: center;
+  text-decoration: none;
+}
+#main .nav_container .social a i {
+  margin-top: 10px;
+}
+#main .nav_container .social a i::before {
+  margin-left: 0px;
+  font-size: 35px;
+  margin-top: 4px;
+}
+#main .main_container .section_heading, #main .main_container .section_heading_yellow, #main .main_container .small_heading {
   font-family: LatoBlack;
   color: white;
   font-size: 3rem;
   line-height: 50px;
 }
 @media only screen and (min-width: 576px) {
-  #main .container .section_heading, #main .container .section_heading_yellow, #main .container .small_heading {
+  #main .main_container .section_heading, #main .main_container .section_heading_yellow, #main .main_container .small_heading {
     font-size: 3.3rem;
     line-height: 56px;
   }
 }
 @media only screen and (min-width: 768px) {
-  #main .container .section_heading, #main .container .section_heading_yellow, #main .container .small_heading {
+  #main .main_container .section_heading, #main .main_container .section_heading_yellow, #main .main_container .small_heading {
     font-size: 3.6rem;
     line-height: initial;
   }
 }
 @media only screen and (min-width: 992px) {
-  #main .container .section_heading, #main .container .section_heading_yellow, #main .container .small_heading {
+  #main .main_container .section_heading, #main .main_container .section_heading_yellow, #main .main_container .small_heading {
     font-size: 4.2rem;
   }
 }
 @media only screen and (min-width: 1200px) {
-  #main .container .section_heading, #main .container .section_heading_yellow, #main .container .small_heading {
+  #main .main_container .section_heading, #main .main_container .section_heading_yellow, #main .main_container .small_heading {
     font-size: 5.5rem;
     line-height: initial;
   }
 }
 @media only screen and (min-width: 1400px) {
-  #main .container .section_heading, #main .container .section_heading_yellow, #main .container .small_heading {
+  #main .main_container .section_heading, #main .main_container .section_heading_yellow, #main .main_container .small_heading {
     font-size: 7rem;
   }
 }
-#main .container .para, #main .container .para_light {
+#main .main_container .para, #main .main_container .para_light {
   margin-top: 45px;
 }
-#main .container .btn_wrapper {
+#main .main_container .btn_wrapper {
   margin-top: 65px;
 }
 
@@ -636,7 +716,6 @@
 #contact .footer_container .small_heading {
   font-size: 1.2rem;
   font-weight: 300;
-  color: #ca49ff !important;
 }
 
 a,

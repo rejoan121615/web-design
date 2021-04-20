@@ -2,7 +2,39 @@
     background: url("../img/main_bg.jpg") no-repeat center center;
     background-size: cover;
 
-    .container {
+    // navbar container 
+    .nav_container {
+        @include padY (40px, 40px);
+        background-color: transparent;
+
+
+        // common style 
+        a, h2 {
+            color: white;
+        }
+
+        .social {
+            a {
+                width: 55px;
+                height: 55px;
+                border: 3px solid white;
+                text-align: center;
+                text-decoration: none;
+                i {
+                    margin-top: 10px;
+                    &::before {
+                        margin-left: 0px;
+                        font-size: 35px;
+                        margin-top: 4px;
+                    }
+                }
+            }
+        }
+    }
+
+
+    // main container 
+    .main_container {
         .section_heading {
             font-family: LatoBlack;
             color: white;
