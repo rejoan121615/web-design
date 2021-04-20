@@ -495,7 +495,7 @@
   text-align: center;
 }
 #ourClientSay .container-fluid .highlight_img img {
-  width: 400px !important;
+  max-width: 400px !important;
 }
 @media only screen and (min-width: 992px) {
   #ourClientSay .container-fluid .highlight_img img {
@@ -551,7 +551,70 @@
   }
 }
 
-a, img {
+#getInTouch {
+  background: url("../img/getInTouch_bg_sm.jpg") no-repeat center center;
+  background-size: cover;
+}
+@media only screen and (min-width: 1200px) {
+  #getInTouch {
+    background: url("../img/getInTouch_bg.jpg") no-repeat center center;
+    background-size: cover;
+  }
+}
+#social_wrap {
+  margin-top: 50px;
+  max-width: 450px;
+}
+@media only screen and (min-width: 576px) {
+  #social_wrap {
+    max-width: 650px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  #social_wrap {
+    max-width: 720px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #social_wrap {
+    max-width: 100%;
+    margin-top: 80px !important;
+  }
+}
+#social_wrap div {
+  text-align: center;
+}
+@media only screen and (min-width: 1200px) {
+  #social_wrap div {
+    width: 12.5%;
+  }
+}
+#social_wrap a {
+  width: 100px;
+  height: 100px;
+  border: 3px solid white;
+  border-radius: 50%;
+  text-decoration: none;
+  text-align: center;
+  padding-top: 8px;
+  margin-bottom: 35px;
+}
+@media only screen and (min-width: 1200px) {
+  #social_wrap a {
+    margin-bottom: 0px;
+  }
+}
+#social_wrap a i {
+  display: inline-block;
+}
+#social_wrap a i::before {
+  color: white;
+  font-size: 3rem;
+  margin-left: 0px;
+}
+
+a,
+img {
   display: inline-block;
 }
 

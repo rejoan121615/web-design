@@ -1,0 +1,54 @@
+#getInTouch {
+    background: url("../img/getInTouch_bg_sm.jpg") no-repeat center center;
+    background-size: cover;
+    @include resp ($xl) {
+        background: url('../img/getInTouch_bg.jpg') no-repeat center center;
+        background-size: cover;
+    }
+    .container {
+        @at-root {
+            #social_wrap {
+                margin-top: 50px;
+                max-width: 450px;
+                    @include resp ($sm) {
+                        max-width: 650px;
+                    }
+                    @include resp ($md) {
+                        max-width: 720px;
+                    } 
+                    @include resp ($xl) {
+                        max-width: 100%;
+                        margin-top: 80px!important;
+                    }
+                div {
+                    text-align: center;
+                    @include resp ($xl) {
+                        width: (100% / 8);
+                    }
+                    
+                }
+                a {
+                    width: 100px;
+                    height: 100px;
+                    border: 3px solid white;
+                    border-radius: 50%;
+                    text-decoration: none;
+                    text-align: center;
+                    padding-top: 8px;
+                    margin-bottom: 35px;
+                    @include resp ($xl) {
+                        margin-bottom: 0px;
+                    }
+                    i {
+                        display: inline-block;
+                        &::before {
+                            color: white;
+                            font-size: 3rem;
+                            margin-left: 0px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

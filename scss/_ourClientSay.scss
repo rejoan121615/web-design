@@ -88,7 +88,7 @@
         .highlight_img {
             text-align: center;
             img {
-                width: 400px !important;
+                max-width: 400px !important;
                 // responsive
                 @include resp($lg) {
                     width: 100% !important;

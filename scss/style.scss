@@ -1,24 +1,24 @@
-@import 'varMixing';
-@import 'fonts';
-@import 'navbar';
-@import 'main';
-@import 'wearecreative';
-@import 'ourBestTeam';
-@import 'bestWork';
-@import 'whyChooseUs';
-@import 'ourBestService';
-@import 'ourClientSay';
+@import "varMixing";
+@import "fonts";
+@import "navbar";
+@import "main";
+@import "wearecreative";
+@import "ourBestTeam";
+@import "bestWork";
+@import "whyChooseUs";
+@import "ourBestService";
+@import "ourClientSay";
+@import "getInTouch";
 
-
-a, img {
+a,
+img {
     display: inline-block;
 }
 
-
 .container {
     @include padY(100px, 100px);
-    // responsive 
-    @include resp ($lg) {
-        @include padY (130px, 130px);
+    // responsive
+    @include resp($lg) {
+        @include padY(130px, 130px);
     }
 }
