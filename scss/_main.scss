@@ -1,40 +1,11 @@
 #main {
-    background: url("../img/main_bg.jpg") no-repeat center center;
-    background-size: cover;
-
-    // navbar container 
-    .nav_container {
-        @include padY (40px, 40px);
-        background-color: transparent;
-
-
-        // common style 
-        a, h2 {
-            color: white;
-        }
-
-        .social {
-            a {
-                width: 55px;
-                height: 55px;
-                border: 3px solid white;
-                text-align: center;
-                text-decoration: none;
-                i {
-                    margin-top: 10px;
-                    &::before {
-                        margin-left: 0px;
-                        font-size: 35px;
-                        margin-top: 4px;
-                    }
-                }
-            }
-        }
-    }
-
-
-    // main container 
     .main_container {
+        @include resp($xl) {
+            @include padY(165px!important, 180px!important);
+        }
+        @include resp ($xxl) {
+            @include padY (200px!important, 200px!important);
+        }
         .section_heading {
             font-family: LatoBlack;
             color: white;
@@ -50,7 +21,6 @@
             }
             @include resp($lg) {
                 font-size: 4.2rem;
-
             }
             @include resp($xl) {
                 font-size: 5.5rem;

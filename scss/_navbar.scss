@@ -17,6 +17,7 @@
                     font-size: 3rem;
                 }
             }
+            // social bar 
             .social {
                 a {
                     text-align: center;
@@ -51,6 +52,9 @@
                 }
             }
             #mynavbar {
+                background-color: $black;
+                border-radius: 8px;
+                padding-left: 25px;
                 // responsive 
                 @include resp ($sm) {
                     margin-top: 50px!important;
@@ -64,6 +68,7 @@
                         font-size: 1.1rem;
                         letter-spacing: 1px;
                     }
+                    
                 }
             }
         }

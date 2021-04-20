@@ -23,3 +23,27 @@ img {
         @include padY(130px, 130px);
     }
 }
+
+#navbar_main_wrapper {
+    background: url("../img/corner_bottom.png") no-repeat 47% top,
+        url("../img/main_bg.jpg") no-repeat center center;
+    background-size: 0px, cover;
+
+    @include resp($md) {
+        background-size: 330px, cover;
+        background-position: 55% top, center center;
+    }
+    @include resp($lg) {
+        background-size: 415px, cover;
+        background-position: 45.5% top, center center;
+    }
+    @include resp($xl) {
+        background-size: 600px, cover;
+        background-position: 52% top, center center;
+    }
+    @include resp($xxl) {
+        background-size: 650px, cover;
+        background-position: 47% top, center center;
+    }
+
+}
