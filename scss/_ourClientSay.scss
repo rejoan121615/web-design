@@ -1,0 +1,143 @@
+@font-face {
+    font-family: IconFont;
+    src: url("../fonts/LetterGothicStd.otf");
+}
+
+#ourClientSay {
+    // responsive
+    @include resp($xxl) {
+        background: white url("../img/black_bg.png") no-repeat left center;
+        background-size: 25% 100%;
+    }
+    .container-fluid {
+        // common style
+        .small_heading {
+            font-size: 1.15rem;
+        }
+
+        // responsive
+        @include resp($xxl) {
+            .texts,
+            .highlight_img,
+            .comment,
+            .highlight_img > img {
+                border-radius: 0px !important;
+            }
+        }
+        // padding: 0;
+        @include padY(80px, 80px);
+        @include resp($xxl) {
+            @include padY(0px, 0px);
+
+            max-width: 1600px;
+        }
+        .texts {
+            background-color: $bg_black;
+            @include padY(60px!important, 60px!important);
+            // responsive
+            @include resp($sm) {
+                @include padY(90px!important, 90px!important);
+            }
+            @include resp($xxl) {
+                @include padY(100px!important, 50px!important);
+            }
+            .comm_wrap {
+                @include resp($xxl) {
+                    margin-top: 70px !important;
+                }
+                @include resp(1650px) {
+                    margin-top: 150px !important;
+                }
+            }
+            // comments
+            .comments {
+                max-width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+                // responsive
+                @include resp($sm) {
+                    max-width: 500px;
+                }
+                &:last-child {
+                    @include resp(1600px) {
+                        margin-top: 65px !important;
+                    }
+                }
+                .para_light {
+                    position: relative;
+                    &::before {
+                        content: "“";
+                        font-family: IconFont;
+                        font-size: 95px;
+                        color: #fba419;
+                        position: absolute;
+                        top: -50px;
+                        left: -30px;
+                        // responsive
+                        @include resp($sm) {
+                            font-size: 120px;
+                            position: absolute;
+                            top: -50px;
+                            left: -55px;
+                        }
+                    }
+                }
+            }
+        }
+        // highlight client image
+        .highlight_img {
+            text-align: center;
+            img {
+                width: 400px !important;
+                // responsive
+                @include resp($lg) {
+                    width: 100% !important;
+                    max-width: 500px !important;
+                }
+                @include resp($xl) {
+                    max-width: 600px !important;
+                }
+                @include resp($xxl) {
+                    max-width: initial !important;
+                    @include padY(0px, 0px);
+                    width: 100% !important;
+                    height: 100%;
+                }
+            }
+        }
+        // comment highlight
+        .comment {
+            background-color: white;
+            max-width: 500px;
+            margin-left: auto;
+            margin-right: auto;
+
+            // icon
+            .icon {
+                font-family: IconFont;
+                font-size: 250px;
+                color: #fba419;
+                font-style: normal;
+                display: block;
+                width: 145px;
+                height: 80px;
+                line-height: 220px;
+                // spacing
+                margin-top: 80px;
+                // responsive
+                @include resp($sm) {
+                    margin-top: 100px;
+                    margin-bottom: 75px;
+                }
+                @include resp($xxl) {
+                    font-size: 380px;
+                    width: 250px;
+                    height: 77px;
+                    line-height: 220px;
+                    margin-top: 280px;
+                    margin-bottom: 140px;
+                }
+            }
+        }
+    }
+}

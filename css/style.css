@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .para, .para_light {
   font-family: LatoRegular;
   font-size: 1.2rem;
@@ -394,6 +395,160 @@
 #ourBestService .container .service_features .item .para_light {
   max-width: 400px;
   text-align: justify;
+}
+
+@font-face {
+  font-family: IconFont;
+  src: url("../fonts/LetterGothicStd.otf");
+}
+@media only screen and (min-width: 1400px) {
+  #ourClientSay {
+    background: white url("../img/black_bg.png") no-repeat left center;
+    background-size: 25% 100%;
+  }
+}
+#ourClientSay .container-fluid {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+#ourClientSay .container-fluid .small_heading {
+  font-size: 1.15rem;
+}
+@media only screen and (min-width: 1400px) {
+  #ourClientSay .container-fluid .texts,
+#ourClientSay .container-fluid .highlight_img,
+#ourClientSay .container-fluid .comment,
+#ourClientSay .container-fluid .highlight_img > img {
+    border-radius: 0px !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #ourClientSay .container-fluid {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    max-width: 1600px;
+  }
+}
+#ourClientSay .container-fluid .texts {
+  background-color: #2f2f2f;
+  padding-top: 60px !important;
+  padding-bottom: 60px !important;
+}
+@media only screen and (min-width: 576px) {
+  #ourClientSay .container-fluid .texts {
+    padding-top: 90px !important;
+    padding-bottom: 90px !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #ourClientSay .container-fluid .texts {
+    padding-top: 100px !important;
+    padding-bottom: 50px !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #ourClientSay .container-fluid .texts .comm_wrap {
+    margin-top: 70px !important;
+  }
+}
+@media only screen and (min-width: 1650px) {
+  #ourClientSay .container-fluid .texts .comm_wrap {
+    margin-top: 150px !important;
+  }
+}
+#ourClientSay .container-fluid .texts .comments {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (min-width: 576px) {
+  #ourClientSay .container-fluid .texts .comments {
+    max-width: 500px;
+  }
+}
+@media only screen and (min-width: 1600px) {
+  #ourClientSay .container-fluid .texts .comments:last-child {
+    margin-top: 65px !important;
+  }
+}
+#ourClientSay .container-fluid .texts .comments .para_light {
+  position: relative;
+}
+#ourClientSay .container-fluid .texts .comments .para_light::before {
+  content: "“";
+  font-family: IconFont;
+  font-size: 95px;
+  color: #fba419;
+  position: absolute;
+  top: -50px;
+  left: -30px;
+}
+@media only screen and (min-width: 576px) {
+  #ourClientSay .container-fluid .texts .comments .para_light::before {
+    font-size: 120px;
+    position: absolute;
+    top: -50px;
+    left: -55px;
+  }
+}
+#ourClientSay .container-fluid .highlight_img {
+  text-align: center;
+}
+#ourClientSay .container-fluid .highlight_img img {
+  width: 400px !important;
+}
+@media only screen and (min-width: 992px) {
+  #ourClientSay .container-fluid .highlight_img img {
+    width: 100% !important;
+    max-width: 500px !important;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  #ourClientSay .container-fluid .highlight_img img {
+    max-width: 600px !important;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #ourClientSay .container-fluid .highlight_img img {
+    max-width: initial !important;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    width: 100% !important;
+    height: 100%;
+  }
+}
+#ourClientSay .container-fluid .comment {
+  background-color: white;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#ourClientSay .container-fluid .comment .icon {
+  font-family: IconFont;
+  font-size: 250px;
+  color: #fba419;
+  font-style: normal;
+  display: block;
+  width: 145px;
+  height: 80px;
+  line-height: 220px;
+  margin-top: 80px;
+}
+@media only screen and (min-width: 576px) {
+  #ourClientSay .container-fluid .comment .icon {
+    margin-top: 100px;
+    margin-bottom: 75px;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  #ourClientSay .container-fluid .comment .icon {
+    font-size: 380px;
+    width: 250px;
+    height: 77px;
+    line-height: 220px;
+    margin-top: 280px;
+    margin-bottom: 140px;
+  }
 }
 
 a, img {
